@@ -1,32 +1,35 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bauernmultiplikation;
 
 namespace Bauernmultiplikation.Tests
 {
-    [TestClass]
     public class BauernmultiplikationTests
     {
-        [TestMethod]
+        [SetUp]
+        public void Setup()
+        {
+        }
+
+        [Test]
         public void Mul_PositiveNumbers_ReturnsProduct()
         {
-            Assert.AreEqual(91, Multiplikator.Mul(13, 7));
-            Assert.AreEqual(150, Multiplikator.Mul(25, 6));
+            Assert.That(Multiplikator.Mul(13, 7), Is.EqualTo(91));
+            Assert.That(Multiplikator.Mul(25, 6), Is.EqualTo(150));
         }
 
-        [TestMethod]
+        [Test]
         public void Mul_NegativeNumbers_ReturnsProduct()
         {
-            Assert.AreEqual(-12, Multiplikator.Mul(-3, 4));
-            Assert.AreEqual(-48, Multiplikator.Mul(4, -12));
-            Assert.AreEqual(21, Multiplikator.Mul(-7, -3));
+            Assert.That(Multiplikator.Mul(-3, 4), Is.EqualTo(-12));
+            Assert.That(Multiplikator.Mul(4, -12), Is.EqualTo(-48));
+            Assert.That(Multiplikator.Mul(-7, -3), Is.EqualTo(21));
         }
 
-        [TestMethod]
+        [Test]
         public void Mul_Zero_ReturnsZero()
         {
-            Assert.AreEqual(0, Multiplikator.Mul(0, 5));
-            Assert.AreEqual(0, Multiplikator.Mul(5, 0));
-            Assert.AreEqual(0, Multiplikator.Mul(0, 0));
+            Assert.That(Multiplikator.Mul(0, 5), Is.EqualTo(0));
+            Assert.That(Multiplikator.Mul(5, 0), Is.EqualTo(0));
+            Assert.That(Multiplikator.Mul(0, 0), Is.EqualTo(0));
         }
     }
 }
