@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36109.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bauernmultiplikation", "Bauernmultiplikation\Bauernmultiplikation.csproj", "{7F542B48-8CC8-42E8-83F3-CCCC49258D6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bauernmultiplikation.Tests", "Bauernmultiplikation.Test\Bauernmultiplikation.Tests.csproj", "{BA88442F-C892-4E7F-A3A9-CAE99B04D1B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bauernmultiplikation.Tests", "Bauernmultiplikation.Tests\Bauernmultiplikation.Tests.csproj", "{BA88442F-C892-4E7F-A3A9-CAE99B04D1B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
