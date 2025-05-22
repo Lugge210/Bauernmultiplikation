@@ -10,7 +10,10 @@ namespace Bauernmultiplikation
     {
         public static int Mul(int x, int y)
         {
-            if (x == 0 || y == 0) return 0;
+            if (x == 0 || y == 0)
+            {
+                return 0;
+            }
 
             int ergebnis = 0;
             int a = Math.Abs(x);
